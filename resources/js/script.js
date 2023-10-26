@@ -16,7 +16,7 @@ function redirDVWA() {
     if (dvwaButton) {
         dvwaButton.addEventListener("click", function () {
             setTimeout(function () {
-                window.location.href = "/views/testing.php";
+                window.location.href = "http://localhost:6600/views/home.php";
             }, 2000);
         });
     }
