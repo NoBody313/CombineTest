@@ -27,7 +27,7 @@ if (!isset($_SESSION['oauth2state'])) {
 if (isset($_SESSION['user'])) {
     // Jika variabel sesi tidak diatur, pengguna belum login
     // Redirect pengguna ke halaman login
-    header('Location: https://testingsso.my.id');
+    header('Location: https://testingsso.my.id/views/home.php');
     exit;
 }
 ?>
