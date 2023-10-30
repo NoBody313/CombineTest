@@ -1,9 +1,9 @@
-<?php 
+<!-- <?php 
 
 include ('/CombineTest/excelProject/resources/logic/logicHeader.php');
 include ('/CombineTest/excelProject/db/database.php');
  
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">

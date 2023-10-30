@@ -24,9 +24,9 @@ if (!isset($_SESSION['oauth2state'])) {
     $_SESSION['oauth2state'] = $provider->getState();
 }
 
-if (!isset($_SESSION['user'])) {
-    header('Location: https://79a0-103-233-100-232.ngrok-free.app');
-}
+// if (!isset($_SESSION['user'])) {
+//     header('Location: https://79a0-103-233-100-232.ngrok-free.app');
+// }
 
 ?>
 
@@ -50,18 +50,7 @@ if (!isset($_SESSION['user'])) {
         <a href='<?php echo $provider->getAuthorizationUrl(); ?>' class="loginBtn w-auto h-auto py-4 px-8 bg-sky-200 rounded-md font-medium">Login</a>
     <?php } ?>
 
-    <a href="index.php?menu=dashboard">Langsung</a>
-
-    <?php if (isset($_GET['menu'])) {
-        $menu = $_GET['menu'];
-
-        switch ($menu) {
-            case 'dashboard':
-                header('Location: views/dashboard.php');
-                exit();
-                break;
-        }
-    } ?>
+    <a href="/views/dashboard.php">Langsung</a>
 
 </div>
 
