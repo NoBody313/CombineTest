@@ -20,6 +20,6 @@ if (!isset($_SESSION['oauth2state'])) {
 }
 
 if (!isset($_SESSION['user'])) {
-    header('Location: https://79a0-103-233-100-232.ngrok-free.app');
+    header('Location: https://testingsso.my.id');
 }
 ?>
