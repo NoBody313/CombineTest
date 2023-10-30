@@ -4,7 +4,7 @@ function redirExcel() {
     if (excelButton) {
         excelButton.addEventListener("click", function () {
             setTimeout(function () {
-                window.location.href = "https://88d6-103-233-100-229.ngrok-free.app/views/home.php";
+                window.location.href = "https://5445-182-0-186-55.ngrok-free.app/views/dashboard.php";
             }, 2000);
         });
     }

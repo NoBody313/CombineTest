@@ -1,37 +1,15 @@
 <?php
-require __DIR__ . '/../../../../config.php';
-require __DIR__ . '/../../../../common.php';
-require __DIR__ . '/../../../../vendor/autoload.php';
 
-use League\OAuth2\Client\Provider\GenericProvider;
-
-$provider = new GenericProvider([
-    'clientId'                => $client_id, 
-    'clientSecret'            => $client_secret,
-    'redirectUri'             => $redirect_uri,
-    'urlAuthorize'            => $fa_url . '/oauth2/authorize',
-    'urlAccessToken'          => $fa_url . '/oauth2/token',
-    'urlResourceOwnerDetails' => $fa_url . '/oauth2/userinfo',
-]);
-
-// Inisialisasi sesi jika belum ada
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
-
-// Simpan state yang dihasilkan untuk sesi.
-if (!isset($_SESSION['oauth2state'])) {
-    $_SESSION['oauth2state'] = $provider->getState();
-}
+require_once './excelProject/resources/php/logicHeader.php';
 
 if (isset($_SESSION['user'])) {
-  header('Location: https://88d6-103-233-100-229.ngrok-free.app/views/home.php');
-  exit();
-} 
-else {
-  header('Location: https://da88-103-233-100-230.ngrok-free.app');
+  header('Location: https://5445-182-0-186-55.ngrok-free.app/views/dashboard.php');
   exit();
 }
+// else {
+//   header('Location: https://79a0-103-233-100-232.ngrok-free.app');
+//   exit();
+// }
 
 ?>
 
@@ -44,4 +22,5 @@ else {
   <title></title>
   <link rel="stylesheet" href="/resources/css/output.css">
 </head>
+
 <body>
