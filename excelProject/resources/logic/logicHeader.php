@@ -19,12 +19,9 @@ if (!isset($_SESSION['oauth2state'])) {
     $_SESSION['oauth2state'] = $provider->getState();
 }
 
-if (isset($_SESSION['user'])) {
-    header('Location: https://webexcel.testingsso.my.id/views/dashboard.php');
-}
-
 if (!isset($_SESSION['user'])) {
-    header('Location: https://testingsso.my.id');
+    // header('Location: https://webexcel.testingsso.my.id/views/dashboard.php');
+    header('Location: https://48aa-103-233-100-230.ngrok-free.app/');
 }
 
 ?>

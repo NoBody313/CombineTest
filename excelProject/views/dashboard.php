@@ -1,8 +1,8 @@
-<!-- <?php
+<?php
 
 include_once('/CombineTest/excelProject/resources/logic/logicHeader.php');
 
-?> -->
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,8 +20,6 @@ include_once('/CombineTest/excelProject/resources/logic/logicHeader.php');
         <?php include('/CombineTest/excelProject/views/layout/sidebar.php'); ?>
         <section class="content container flex flex-col p-4">
             <div class="flex flex-col w-full p-6 bg-gray-800 border border-gray-200 rounded-lg">
-
-
                 <nav class="flex" aria-label="Breadcrumb">
                     <ol class="inline-flex items-center space-x-1 md:space-x-3">
                         <li class="inline-flex items-center">
