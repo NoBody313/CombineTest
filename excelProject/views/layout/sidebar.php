@@ -1,7 +1,7 @@
 <aside
     class="flex flex-col w-fit h-screen px-4 py-8 overflow-y-auto border-r rtl:border-r-0 rtl:border-l bg-gray-900 border-gray-700">
     <a href="#" class="flex justify-center">
-        <img class="w-auto h-14 " src="/resources/img/admedikaLogo.png" alt="">
+        <img class="w-auto h-24 " src="/resources/img/admedikaLogo.png" alt="">
     </a>
 
     <div class="relative mt-6">
@@ -43,7 +43,7 @@
             </a>
 
             <a class="flex items-center px-4 py-2 mt-5 text-gray-400 transition-colors duration-300 transform rounded-md hover:bg-gray-800 hover:text-gray-200 active:bg-gray-800 active:text-gray-200 hover:fill-current"
-                href="/views/dataKaryawan.php">
+                href="/views/listKaryawan.php">
 
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" id="Layer_1"
                     data-name="Layer 1" viewBox="0 0 24 24">
