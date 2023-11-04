@@ -1,7 +1,7 @@
 <aside
     class="flex flex-col w-fit h-screen px-4 py-8 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700">
     <a href="#" class="flex justify-center">
-        <img class="w-auto h-14 " src="/resources//img/admedikaLogo.png" alt="">
+        <img class="w-auto h-14 " src="/resources/img/admedikaLogo.png" alt="">
     </a>
 
     <div class="relative mt-6">
@@ -32,7 +32,7 @@
             </a>
 
             <a class="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-md dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="https://5445-182-0-186-55.ngrok-free.app/views/dataKaryawan.php">
+                href="/views/dataKaryawan.php">
                 <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
