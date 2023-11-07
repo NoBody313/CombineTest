@@ -393,68 +393,6 @@
             "install-path": "../guzzlehttp/psr7"
         },
         {
-            "name": "jerryhopper/oauth2-fusionauth",
-            "version": "0.0.2",
-            "version_normalized": "0.0.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jerryhopper/oauth2-fusionauth.git",
-                "reference": "e0db7bd1fb1f15070d31a849ad2dbf3760e78236"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jerryhopper/oauth2-fusionauth/zipball/e0db7bd1fb1f15070d31a849ad2dbf3760e78236",
-                "reference": "e0db7bd1fb1f15070d31a849ad2dbf3760e78236",
-                "shasum": ""
-            },
-            "require": {
-                "league/oauth2-client": "^2.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "~0.9",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "~2.0"
-            },
-            "time": "2020-12-10T13:00:32+00:00",
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.0.x-dev"
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "JerryHopper\\OAuth2\\Client\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jerry Hopper",
-                    "email": "hopper.jerry@gmail.com",
-                    "homepage": "https://github.com/jerryhopper"
-                }
-            ],
-            "description": "FusionAuth OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
-            "keywords": [
-                "authorisation",
-                "authorization",
-                "client",
-                "fusionauth",
-                "oauth",
-                "oauth2"
-            ],
-            "support": {
-                "issues": "https://github.com/jerryhopper/oauth2-fusionauth/issues",
-                "source": "https://github.com/jerryhopper/oauth2-fusionauth/tree/0.0.2"
-            },
-            "install-path": "../jerryhopper/oauth2-fusionauth"
-        },
-        {
             "name": "league/oauth2-client",
             "version": "2.7.0",
             "version_normalized": "2.7.0.0",

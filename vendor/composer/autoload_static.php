@@ -28,10 +28,6 @@ class ComposerStaticInit22b7ddabcddd0dbfd896b03a23477aa9
         array (
             'League\\OAuth2\\Client\\' => 21,
         ),
-        'J' => 
-        array (
-            'JerryHopper\\OAuth2\\Client\\' => 26,
-        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
@@ -65,10 +61,6 @@ class ComposerStaticInit22b7ddabcddd0dbfd896b03a23477aa9
         'League\\OAuth2\\Client\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/oauth2-client/src',
-        ),
-        'JerryHopper\\OAuth2\\Client\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/jerryhopper/oauth2-fusionauth/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (

@@ -16,7 +16,7 @@ include_once('/CombineTest/excelProject/resources/logic/logicHeader.php');
 
 <body>
 
-    <div class="flex flex-row bg-white">
+    <div class="flex flex-row bg-white h-screen">
         <?php include('/CombineTest/excelProject/views/layout/sidebar.php'); ?>
         <section class="content flex flex-col w-full p-4">
             <div class="flex flex-col w-full p-6 bg-gray-800 border border-gray-200 rounded-lg">
