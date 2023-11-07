@@ -2,12 +2,16 @@
 
 require '../vendor/autoload.php';
 
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "karyawandb";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
+mysqli_query($conn, "ALTER TABLE dataKaryawan AUTO_INCREMENT = 1");
 
 // Nampilin Data
 $id                 = "";
@@ -154,7 +158,7 @@ if (isset($_POST['submitImport'])) {
                     } else {
                         echo "Error: " . mysqli_error($conn);
                     }
-                } 
+                }
             }
 
             mysqli_stmt_close($stmt);
@@ -165,5 +169,48 @@ if (isset($_POST['submitImport'])) {
             }
         }
     }
+}
+
+// export Excel
+if (isset($_REQUEST['exportExcel'])) {
+    $spreadsheet = new Spreadsheet();
+    $sheet = $spreadsheet->getActiveSheet();
+
+    $sheet->setCellValue('A1', 'No');
+    $sheet->setCellValue('B1', 'Nik');
+    $sheet->setCellValue('C1', 'Nama');
+    $sheet->setCellValue('D1', 'Direktorat');
+    $sheet->setCellValue('E1', 'Departemen');
+    $sheet->setCellValue('F1', 'Unit');
+    $sheet->setCellValue('G1', 'Job Title');
+    $sheet->setCellValue('H1', 'Tgl Efektif Resign');
+    $data = mysqli_query($conn, "SELECT * FROM dataKaryawan");
+    $i = 2;
+    $no = 1;
+    while ($d = mysqli_fetch_array($data)) {
+        $sheet->setCellValue('A' . $i, $no++);
+        $sheet->setCellValue('B' . $i, $d['nik']);
+        $sheet->setCellValue('C' . $i, $d['nama']);
+        $sheet->setCellValue('D' . $i, $d['direktorat']);
+        $sheet->setCellValue('E' . $i, $d['departemen']);
+        $sheet->setCellValue('F' . $i, $d['unit']);
+        $sheet->setCellValue('G' . $i, $d['jobTitle']);
+        $sheet->setCellValue('H' . $i, $d['tglEfektifResign']);
+        $i++;
+    }
+
+    $writer = new Xlsx($spreadsheet);
+
+    header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+    header('Content-Disposition: attachment;filename="Data Karyawan.xlsx"');
+    $writer->save('php://output');
+} 
+
+?>
+
+<?php
+if (isset($_REQUEST['exportExcel'])) {
+    header('Location: database.php');
+    exit;
 }
 ?>
