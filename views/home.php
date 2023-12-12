@@ -58,6 +58,12 @@ if (!isset($_SESSION['user'])) {
                 <img src="/resources/img/xls-img.png" alt="excelImg" class="w-14 h-auto">
                 <h2 class="font-medium text-lg mt-6 text-center">Redirect to Web Excel</h2>
             </div>
+            
+            <div id="redirLaravel"
+                class="webLaravel container flex flex-col px-6 py-4 w-fit h-auto bg-blue-200 hover:bg-blue-400 border-2 rounded-md border-blue-500 hover:border-blue-600 items-center cursor-pointer">
+                <img src="/testingSSO/resources/image/logoLaravel.png" alt="excelImg" class="w-14 h-auto">
+                <h2 class="font-medium text-lg mt-6 text-center">Redirect to Web Laravel</h2>
+            </div>
 
             <div id="redirDVWA"
                 class="webDVWA container flex flex-col px-6 py-4 w-fit h-auto bg-blue-200 hover:bg-blue-400 border-2 rounded-md border-blue-500 hover:border-blue-600 items-center cursor-pointer">

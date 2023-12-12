@@ -4,7 +4,19 @@ function redirExcel() {
     if (excelButton) {
         excelButton.addEventListener("click", function () {
             setTimeout(function () {
-                window.location.href = "https://cd82-103-233-100-233.ngrok-free.app/views/dashboard.php";
+                window.location.href = "http://localhost:2000/views/dashboard.php";
+            }, 2000);
+        });
+    }
+}
+
+function redirLaravel() {
+    var excelButton = document.getElementById("redirLaravel");
+
+    if (excelButton) {
+        excelButton.addEventListener("click", function () {
+            setTimeout(function () {
+                window.location.href = "http://localhost:3000";
             }, 2000);
         });
     }
@@ -16,7 +28,7 @@ function redirDVWA() {
     if (dvwaButton) {
         dvwaButton.addEventListener("click", function () {
             setTimeout(function () {
-                window.location.href = "http://localhost:6600/views/home.php";
+                window.location.href = "http://localhost:8000/";
             }, 2000);
         });
     }
@@ -25,3 +37,4 @@ function redirDVWA() {
 // Panggil Fun nya di akhir
 redirExcel();
 redirDVWA();
+redirLaravel();
